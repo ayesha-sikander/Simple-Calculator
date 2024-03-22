@@ -8,8 +8,8 @@ console.log("\n\tWelcome To \'CodeWithAyesha\' - CLI Simple Calculator\n");
 
 // Asking Questions from Users through Inquirer
 let answers = await inquirer.prompt([
-    {message: "Enter First Number", type: "number", name: "firstNumber"},
-    {message: "Enter Second Number", type: "number", name: "secondNumber"},
+    {message: "Enter your first number", type: "number", name: "firstNumber"},
+    {message: "Enter your second number", type: "number", name: "secondNumber"},
     {
         message: "Select One Operator to perform Operations",
         type: "list", 
@@ -35,3 +35,5 @@ else if (answers.operator === "Division"){
 else{
     console.log("Invalid Input")
 }
+
+console.log("The End");
